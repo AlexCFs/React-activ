@@ -66,8 +66,6 @@ class Connection extends React.Component {
       <div className="main">
         <h1>Connection</h1>
 
-        {connected ? "Connected" : "Not connected"}
-
         {!connected && (
           <>
             <div className="connectionSelection">
