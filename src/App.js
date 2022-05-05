@@ -1,5 +1,6 @@
 import "./styles.css";
 import ShoppingList from "./ShoppingList";
+import Connection from "./Connection";
 import Home from "./Home";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
