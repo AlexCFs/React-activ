@@ -1,2 +1,2 @@
-# React-activ
+# Small-react-apps
 Created with CodeSandbox
