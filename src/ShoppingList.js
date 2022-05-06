@@ -40,7 +40,7 @@ class ShoppingList extends React.Component {
   render() {
     return (
       <div>
-        <h2>ShoppingList</h2>
+        <h2>Liste de course</h2>
         <ul>
           {articles.map((dept) => (
             <ListItem key={dept.name} value={dept} />

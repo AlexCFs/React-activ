@@ -13,7 +13,9 @@ export default function App() {
   function handleClickHome() {
     navigate("/");
   }
-
+  function handleMenuItem(url) {
+    navigate(url);
+  }
   return (
     <div className="App">
       <h1 className="appTitle">App of Small Apps</h1>
@@ -27,10 +29,10 @@ export default function App() {
 
       <Box sx={{ mt: 2 }}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home onClickMenuItem={handleMenuItem} />} />
           <Route path="/shopping-list" element={<ShoppingList />} />
-          <Route path="/Connection" element={<Connection />} />
-          <Route path="/ListDepartments" element={<ListDepartments />} />
+          <Route path="/connection" element={<Connection />} />
+          <Route path="/listDepartments" element={<ListDepartments />} />
         </Routes>
       </Box>
     </div>
