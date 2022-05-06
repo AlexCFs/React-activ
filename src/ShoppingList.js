@@ -20,6 +20,13 @@
 */
 import React from "react";
 
+function ListItem(props) {
+  return (
+    <div>
+      <li>{props.value.name}</li>
+    </div>
+  );
+}
 const articles = [
   { category: "Food", price: "10,99", name: "Football" },
   { category: "Food", price: "9.99", name: "Baseball" },
@@ -35,8 +42,9 @@ class ShoppingList extends React.Component {
       <div>
         <h2>ShoppingList</h2>
         <ul>
-          <li>{articles[0].name}</li>
-          <li>{articles[1].name}</li>
+          {articles.map((dept) => (
+            <ListItem key={dept.name} value={dept} />
+          ))}
         </ul>
       </div>
     );
