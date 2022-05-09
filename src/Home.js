@@ -40,6 +40,9 @@ class Home extends React.Component {
           <MenuItem onClick={() => this.handleClickMenuItem("/shopping-list")}>
             Liste de course
           </MenuItem>
+          <MenuItem onClick={() => this.handleClickMenuItem("/listMovies")}>
+            Genre de film
+          </MenuItem>
         </Menu>
       </div>
     );
